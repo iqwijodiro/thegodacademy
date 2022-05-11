@@ -8,20 +8,62 @@
       shrink-on-scroll
       scroll-threshold="500"
       tag="header"
-      class="pt-3"
+      color="#252525"
     >
-      <v-container>
-        <v-row class="d-flex justify-space-between align-center">
-          <v-toolbar-title>
-            <nuxt-link to="/">
-              <v-img
-                :src="require('~/assets/images/logo-brand.png')"
-                max-width="140"
-                min-width="50"
-              />
+      <v-container class="d-flex align-center justify-space-between">
+        <v-app-bar-nav-icon class="pt-2">
+          <nuxt-link to="/">
+            <v-img
+              :src="require('~/assets/images/logo-brand.png')"
+              max-width="100%"
+            />
+          </nuxt-link>
+        </v-app-bar-nav-icon>
+        <!-- <v-spacer></v-spacer> -->
+        <nav class="nav hidden-sm-and-down transparent">
+          <v-row justify="space-around" class="pt-4">
+            <!-- <v-col> -->
+            <nuxt-link
+              v-for="link in links"
+              :key="link.title"
+              :to="link.url"
+              class="nav__link ma-4"
+            >
+              <h2>{{ link.title }}</h2>
             </nuxt-link>
-          </v-toolbar-title>
-        </v-row>
+            <!-- <v-col> -->
+            <nuxt-link to="/" class="nav__link ma-4">
+              <v-menu open-on-hover bottom offset-y>
+                <template #activator="{ on, attrs }">
+                  <h2 v-bind="attrs" v-on="on">
+                    Formación
+                    <v-icon color="#fff"> mdi-menu-down </v-icon>
+                  </h2>
+                </template>
+                <v-list class="nav">
+                  <v-list-item v-for="(droplink, i) in dropdown" :key="i">
+                    <v-list-item-title>
+                      <nuxt-link
+                        :to="droplink.url"
+                        class="nav__link nav__link-drop"
+                      >
+                        <h2>
+                          {{ droplink.title }}
+                        </h2>
+                      </nuxt-link>
+                    </v-list-item-title>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </nuxt-link>
+            <nuxt-link to="/contact" class="nav__link ma-4">
+              <h2>Contáctanos</h2>
+            </nuxt-link>
+            <nuxt-link to="/login" class="myBtn ma-2 py-4 px-5">
+              <h2>Ingresar <v-icon class="ml-1">mdi-login-variant</v-icon></h2>
+            </nuxt-link>
+          </v-row>
+        </nav>
       </v-container>
     </v-app-bar>
   </div>
@@ -30,9 +72,48 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      tabs: false,
+      links: [
+        {
+          title: 'Home',
+          url: '/',
+        },
+        {
+          title: 'Nosotros',
+          url: '/nosotros',
+        },
+      ],
+      dropdown: [
+        {
+          title: 'Cursos',
+          url: '/courses',
+        },
+        {
+          title: 'Programas',
+          url: '/programs',
+        },
+        {
+          title: 'ForGroups',
+          url: '/groups',
+        },
+      ],
+    }
   },
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.nav {
+  .nav__link,
+  .nav__link.nav__link-drop {
+    h2 {
+      color: #fff !important;
+    }
+  }
+  .nav__link.nav__link-drop {
+    padding: 1rem;
+    border-bottom: 1px solid #fff;
+  }
+}
+</style>
