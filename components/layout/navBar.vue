@@ -59,9 +59,12 @@
             <nuxt-link to="/contact" class="nav__link ma-4">
               <h2>Contáctanos</h2>
             </nuxt-link>
-            <nuxt-link to="/login" class="myBtn ma-2 py-4 px-5">
-              <h2>Ingresar <v-icon class="ml-1">mdi-login-variant</v-icon></h2>
-            </nuxt-link>
+            <my-btn
+              text="Ingresar"
+              destiny="/login"
+              btn-type="primary"
+              append-icon="mdi-login-variant"
+            />
           </v-row>
         </nav>
       </v-container>
@@ -70,7 +73,9 @@
 </template>
 
 <script>
+import myBtn from '~/components/buttons/myBtn.vue'
 export default {
+  components: { myBtn },
   data() {
     return {
       tabs: false,

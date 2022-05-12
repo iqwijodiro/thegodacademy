@@ -17,20 +17,3 @@ h2 {
 a {
   text-decoration: none;
 }
-
-.myBtn {
-  background-color: $green-primary !important;
-  font-size: 1.1rem;
-  color: #252525 !important;
-  text-transform: none !important;
-  font-weight: 400 !important;
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  &:hover {
-    background-color: #00a89a !important;
-    color: #fff !important;
-  }
-}
