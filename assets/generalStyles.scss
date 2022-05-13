@@ -9,6 +9,11 @@ button {
   font-family: $general-font !important;
 }
 
+h1 {
+  font-family: $title-font !important;
+  font-size: 4.6rem;
+}
+
 h2 {
   font-size: 1.1rem;
   font-weight: 400;
@@ -16,4 +21,15 @@ h2 {
 
 a {
   text-decoration: none;
+  &:hover {
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+.display-7 {
+  font-size: 1.2rem;
+  line-height: 1.5;
 }

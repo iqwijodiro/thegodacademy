@@ -13,22 +13,12 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
-      // {
-      //   rel: 'stylesheet',
-      //   href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap',
-      // },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-      // {
-      //   rel: 'preconnect',
-      //   href: 'https://fonts.gstatic.com',
-      //   crossOriginIsolated: true,
-      // },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300;400;700&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300;400;500;600;700&display=swap',
       },
       {
         rel: 'stylesheet',
@@ -79,7 +69,7 @@ export default {
       themes: {
         dark: {
           primary: '#00ffe9', // Green lime
-          accent: colors.grey.darken1,
+          accent: colors.grey.darken3,
           secondary: '#766eff', // Purple
           info: colors.teal.lighten2,
           warning: colors.amber.base,

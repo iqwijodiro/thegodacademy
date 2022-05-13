@@ -8,7 +8,7 @@
       shrink-on-scroll
       scroll-threshold="500"
       tag="header"
-      color="#252525"
+      color="#000"
     >
       <v-container class="d-flex align-center justify-space-between">
         <v-app-bar-nav-icon class="pt-2">
@@ -59,12 +59,14 @@
             <nuxt-link to="/contact" class="nav__link ma-4">
               <h2>Contáctanos</h2>
             </nuxt-link>
-            <my-btn
-              text="Ingresar"
-              destiny="/login"
-              btn-type="primary"
-              append-icon="mdi-login-variant"
-            />
+            <div class="d-flex justify-center align-center mx-5">
+              <my-btn
+                text="Ingresar"
+                destiny="/login"
+                btn-type="primary"
+                append-icon="mdi-login-variant"
+              />
+            </div>
           </v-row>
         </nav>
       </v-container>

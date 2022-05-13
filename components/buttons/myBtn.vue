@@ -1,11 +1,20 @@
 <template>
-  <div class="d-flex justify-center align-center mx-5">
-    <v-btn :to="destiny" class="myBtn" :color="btnType" @click.prevent="action">
-      <v-icon v-if="preppendIcon"> {{ iconName }} </v-icon>
-      <div v-else-if="iconName === ''">{{ text }}</div>
-      <v-icon v-else> {{ iconName }} </v-icon>
-    </v-btn>
-  </div>
+  <v-btn
+    nuxt
+    depressed
+    :to="destiny"
+    class="myBtn"
+    :color="btnType"
+    @click.prevent="action"
+  >
+    <slot name="preppendIcon">
+      <v-icon> {{ preppendIcon }}</v-icon>
+    </slot>
+    <div class="mx-2 btn__text">{{ text }}</div>
+    <slot name="appendIcon">
+      <v-icon> {{ appendIcon }}</v-icon>
+    </slot>
+  </v-btn>
 </template>
 
 <script>
@@ -45,13 +54,9 @@ export default {
 
 <style lang="scss" scoped>
 .myBtn {
-  background-color: $green-primary !important;
-  font-size: 1.1rem;
   color: #252525 !important;
-  text-transform: none !important;
-  font-weight: 400 !important;
+  background-color: $green-primary !important;
   padding: 1.5rem 1.2rem !important;
-  letter-spacing: normal;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -60,6 +65,12 @@ export default {
   &:hover {
     background-color: #00a89a !important;
     color: #fff !important;
+  }
+  .btn__text {
+    font-size: 1.1rem;
+    text-transform: none !important;
+    font-weight: 600 !important;
+    letter-spacing: normal;
   }
 }
 </style>

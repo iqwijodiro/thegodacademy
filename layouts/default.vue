@@ -1,24 +1,21 @@
 <template>
-  <v-app dark>
-    <NavBar />
-    <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+  <v-app>
+    <nav-bar />
+    <v-main class="ma-0 px-0">
+      <Nuxt />
     </v-main>
-
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <my-footer />
   </v-app>
 </template>
 
 <script>
 import NavBar from '~/components/layout/navBar'
+import MyFooter from '~/components/layout/MyFooter'
 export default {
   name: 'DefaultLayout',
   components: {
     NavBar,
+    MyFooter,
   },
   data() {
     return {
@@ -47,6 +44,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 body {
-  background-color: #252525;
+  background-color: #000;
 }
 </style>
