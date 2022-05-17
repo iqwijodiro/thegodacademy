@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="app">
     <nav-bar />
     <v-main class="ma-0 px-0">
       <Nuxt />
@@ -43,7 +43,27 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-body {
-  background-color: #000;
+.app {
+  font-family: $general-font;
+  html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+  }
 }
 </style>

@@ -2,10 +2,8 @@ $general-font: 'Poppins', sans-serif;
 $title-font: 'Poiret One', cursive;
 
 body,
-p,
-a,
-span,
-button {
+body::before,
+body::before {
   font-family: $general-font !important;
 }
 
@@ -25,11 +23,45 @@ a {
     color: rgba($color: #fff, $alpha: 0.5);
   }
 }
-ul {
+ul,
+.list {
   list-style-type: none;
+  // text-indent: -1.5rem;
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
 }
 
-.display-7 {
+.text__lg {
   font-size: 1.2rem;
   line-height: 1.5;
+}
+.text__mid {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
 }
