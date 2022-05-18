@@ -8,35 +8,35 @@
     :height="height"
     flat
     light
-    class="course__card mx-4 my-5 pb-3 d-flex flex-column justify-space-between"
+    class="course__card"
   >
-    <figure class="overflow-hidden">
-      <v-img
-        :src="imgLink"
-        height="200px"
-        class="mb-2 img-course white--text align-end pb-3"
-        :alt="name"
-      >
+    <figure>
+      <v-img :src="imgLink" height="200px" class="ma-0 pa-0" :alt="title">
       </v-img>
     </figure>
-    <v-card-title class="card-title my-2" tag="h2">
-      {{ title }}
-    </v-card-title>
-    <v-card-subtitle class="text-card" tag="h3">
-      {{ subtitle }}
-    </v-card-subtitle>
-    <v-card-text tag="p">
-      {{ description }}
-    </v-card-text>
-    <div class="centrar mt-2">
-      <v-btn class="minibtn mt-3" @click="selectCourse(course)">
-        Start now
-      </v-btn>
+    <div class="card__wrapper px-8 pt-8">
+      <h2 class="card__title mb-2 pa-0">
+        <strong>
+          {{ title }}
+        </strong>
+      </h2>
+      <h3 class="card__subtitle mt-1 mb-2 mx-0 pa-0">
+        {{ subtitle }}
+      </h3>
+      <p class="card__text pa-0 my-4">
+        {{ description }}
+      </p>
+    </div>
+    <div class="px-8 pb-8">
+      <my-btn text="Start Now" destiny="/courses" btn-type="primary" />
+      <!-- @click="selectCourse(course)" -->
     </div>
   </v-card>
 </template>
 <script>
+import myBtn from '../buttons/myBtn.vue'
 export default {
+  components: { myBtn },
   props: {
     width: {
       type: String,
@@ -95,23 +95,35 @@ export default {
   .img-course {
     width: 100%;
     height: 100%;
-    filter: grayscale(50%);
+    // filter: grayscale(50%);
     transition: all 0.4s ease-in-out;
   }
   &:hover {
     // opacity: 1;
+    cursor: pointer;
     transition: all 0.4s ease-in-out;
-    transform: translateY(-5px);
-    .img-course {
-      filter: none;
-    }
-  }
-  .minirow div {
-    font-size: 1rem !important;
-    color: #2b2b2b;
-    // &:nth-child(1) {
-    //     border-right: 2px solid $gray-light;
+    // transform: translateY(-5px);
+    // .img-course {
+    //   // filter: none;
     // }
+  }
+  .card__wrapper {
+    height: 300px;
+    .card__title {
+      font-family: $title-font;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .card__subtitle {
+      font-size: 1.2rem;
+      color: #bbb;
+      font-weight: 400;
+    }
+    .card__text {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
   }
 }
 </style>

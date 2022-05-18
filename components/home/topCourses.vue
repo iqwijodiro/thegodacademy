@@ -9,6 +9,7 @@
             width="100%"
             max-width="350"
             height="100%"
+            min-height="600"
             :title="course.title"
             :subtitle="course.subtitle"
             :description="course.description"
