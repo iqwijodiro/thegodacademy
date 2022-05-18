@@ -6,35 +6,31 @@
     :min-width="minWidth"
     :width="width"
     :height="height"
-    elevation="0"
+    flat
+    light
     class="course__card mx-4 my-5 pb-3 d-flex flex-column justify-space-between"
-    @click="selectCourse(course)"
   >
     <figure class="overflow-hidden">
       <v-img
         :src="imgLink"
-        height="100%"
-        max-height="250px"
+        height="200px"
         class="mb-2 img-course white--text align-end pb-3"
         :alt="name"
       >
-        <v-card-title class="card-title my-2">
-          {{ name }}
-        </v-card-title>
       </v-img>
     </figure>
-    <v-card-text class="text-card">
-      {{ subName }}
+    <v-card-title class="card-title my-2" tag="h2">
+      {{ title }}
+    </v-card-title>
+    <v-card-subtitle class="text-card" tag="h3">
+      {{ subtitle }}
+    </v-card-subtitle>
+    <v-card-text tag="p">
+      {{ description }}
     </v-card-text>
-    <v-row class="minirow d-flex justify-center align-center py-1">
-      <div>
-        <span class="priceOld mr-2"> ${{ parseInt(price) }} </span>
-        <span class="priceNew mr-2"> ${{ parseInt(finalPrice) }} </span>
-      </div>
-    </v-row>
     <div class="centrar mt-2">
       <v-btn class="minibtn mt-3" @click="selectCourse(course)">
-        Ver Curso
+        Start now
       </v-btn>
     </div>
   </v-card>
@@ -71,28 +67,16 @@ export default {
       default: '',
       required: true,
     },
-    name: {
+    title: {
       type: String,
       default: '',
       required: true,
     },
-    subName: {
+    subtitle: {
       type: String,
       default: '',
     },
-    sections: {
-      type: Number,
-      default: null,
-    },
-    resources: {
-      type: Number,
-      default: null,
-    },
-    price: {
-      type: String,
-      default: '',
-    },
-    finalPrice: {
+    description: {
       type: String,
       default: '',
     },
@@ -102,18 +86,12 @@ export default {
       course: {},
     }
   },
-  methods: {
-    selectCourse(course) {
-      this.$emit('select-course', course)
-    },
-  },
 }
 </script>
 
 <style lang="scss" scoped>
 .course__card {
   // opacity: 0.75;
-  box-shadow: 10px 5px 10px -5px rgba(0, 0, 0, 0.4) !important;
   .img-course {
     width: 100%;
     height: 100%;
@@ -124,19 +102,9 @@ export default {
     // opacity: 1;
     transition: all 0.4s ease-in-out;
     transform: translateY(-5px);
-    box-shadow: 15px 8px 15px -5px rgba(0, 0, 0, 0.4) !important;
     .img-course {
       filter: none;
     }
-  }
-  .text-card {
-    font-size: 2rem !important;
-    color: #2b2b2b;
-    font-weight: 300;
-    line-height: 1.4 !important;
-    padding: 0 15px !important;
-    margin: 10px 0 !important;
-    // opacity: 1;
   }
   .minirow div {
     font-size: 1rem !important;
