@@ -45,14 +45,17 @@
     <section class="share">
       <v-container>
         <v-row justify="center">
-          <v-col cols="12">
+          <v-col cols="12" class="py-0">
             <div class="social__list d-flex justify-center align-center">
               <a
-                href="https://facebook.com"
-                class="icon__wrapper d-flex justify-center align-center"
+                v-for="social in socials"
+                :key="social.name"
+                :href="social.link"
+                class="icon__wrapper d-flex justify-center align-center mr-5"
+                :style="'background-color:' + social.color"
               >
                 <v-icon light size="30" color="#fff" class="ma-0">
-                  fab fa-facebook-f
+                  {{ social.icon }}
                 </v-icon>
               </a>
             </div>
@@ -64,7 +67,32 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      socials: [
+        {
+          name: 'Facebook',
+          link: 'https://es-la.facebook.com/',
+          color: '#1778f2',
+          icon: 'fab fa-facebook-f',
+        },
+        {
+          name: 'Instagram',
+          link: 'https://www.instagram.com/',
+          color: '#f00075',
+          icon: 'fab fa-instagram',
+        },
+        {
+          name: 'Youtube',
+          link: 'https://www.youtube.com/',
+          color: '#ff0000',
+          icon: 'fab fa-youtube',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
@@ -83,8 +111,9 @@ export default {}
     }
   }
   .share {
+    padding: 1rem 0 3rem;
     .icon__wrapper {
-      background-color: rgba($color: #1778f2, $alpha: 0.85);
+      opacity: 0.9;
       border-radius: 50% / 50%;
       display: inline-block;
       height: 55px;
@@ -94,7 +123,7 @@ export default {}
       line-height: 55px;
       transition: background-color 0.2s ease-in;
       &:hover {
-        background-color: #1778f2;
+        opacity: 1;
       }
     }
   }

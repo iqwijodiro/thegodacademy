@@ -4,6 +4,7 @@
     <versicle-sect />
     <top-courses />
     <stay-Connected />
+    <new-born />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import heroIndex from '~/components/home/heroIndex.vue'
 import VersicleSect from '~/components/home/versicleSect.vue'
 import TopCourses from '~/components/home/topCourses.vue'
 import StayConnected from '~/components/home/stayConnected.vue'
+import NewBorn from '~/components/home/newBorn.vue'
 export default {
   name: 'HeroIndex',
   components: {
@@ -19,6 +21,7 @@ export default {
     VersicleSect,
     TopCourses,
     StayConnected,
+    NewBorn,
   },
 }
 </script>

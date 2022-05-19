@@ -10,7 +10,7 @@
               <my-btn
                 text="Quiero Formarme"
                 destiny="/courses"
-                btn-type="primary"
+                color="primary"
                 class="ma-2"
               />
             </v-card-actions>

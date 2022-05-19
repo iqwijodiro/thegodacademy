@@ -63,7 +63,7 @@
               <my-btn
                 text="Ingresar"
                 destiny="/login"
-                btn-type="primary"
+                color="primary"
                 append-icon="mdi-login-variant"
               />
             </div>

@@ -4,9 +4,11 @@
     depressed
     :to="destiny"
     class="myBtn rounded-xl"
-    :color="btnType"
+    :class="btnType"
+    :color="color"
     @click.prevent="action"
   >
+    <!-- :style="btnType" -->
     <slot name="preppendIcon">
       <v-icon> {{ preppendIcon }}</v-icon>
     </slot>
@@ -28,7 +30,7 @@ export default {
       type: String,
       default: '/',
     },
-    btnType: {
+    color: {
       type: String,
       required: true,
     },
@@ -49,28 +51,40 @@ export default {
       default: '',
     },
   },
+  computed: {
+    btnType() {
+      return this.color === 'primary' ? 'bg-primary' : 'bg-secondary'
+    },
+  },
 }
 </script>
 
 <style lang="scss" scoped>
 .myBtn {
-  color: #373737 !important;
-  background-color: $green-primary !important;
   padding: 1.5rem 1.2rem !important;
-  // border-radius: 100px;
-  // -webkit-border-radius: 100px;
-  // -moz-border-radius: 100px;
-  // -ms-border-radius: 100px;
-  // -o-border-radius: 100px;
-  &:hover {
-    background-color: $green-hover !important;
-    color: #fff !important;
-  }
+  color: #373737 !important;
+  transition: all 0.2s ease-out;
   .btn__text {
     font-size: 1.1rem;
     text-transform: none !important;
     font-weight: 600 !important;
     letter-spacing: normal;
+  }
+  &:hover {
+    color: #fff !important;
+  }
+}
+.bg-primary {
+  background-color: $green-primary !important;
+  &:hover {
+    background-color: $green-hover !important;
+  }
+}
+.bg-secondary {
+  background-color: $purple-secondary !important;
+  color: #fff !important;
+  &:hover {
+    background-color: $blue-hover !important;
   }
 }
 </style>

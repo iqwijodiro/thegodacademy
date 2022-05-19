@@ -28,7 +28,7 @@
       </p>
     </div>
     <div class="px-8 pb-8">
-      <my-btn text="Start Now" destiny="/courses" btn-type="primary" />
+      <my-btn text="Start Now" destiny="/courses" color="primary" />
       <!-- @click="selectCourse(course)" -->
     </div>
   </v-card>
