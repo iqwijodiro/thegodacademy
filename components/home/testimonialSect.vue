@@ -1,0 +1,76 @@
+<template>
+  <section class="testimonials">
+    <v-container class="text-center">
+      <h2 class="section__title">Nuestro Equipo</h2>
+      <v-row justify="center">
+        <v-col cols="12" md="10">
+          <v-card flat>
+            <v-carousel hide-delimiters cycle>
+              <v-carousel-item
+                v-for="(slide, i) in slides"
+                :key="i"
+                class="mx-auto"
+              >
+                <v-card
+                  flat
+                  height="100%"
+                  max-width="80%"
+                  class="d-flex justify-center align-center flex-column px-10 mx-auto"
+                >
+                  <v-avatar size="200" class="mb-5" style="border-radius: 50%">
+                    <v-img :src="slide.src" />
+                  </v-avatar>
+                  <p class="text__lg mt-8">
+                    {{ slide.text }}
+                  </p>
+                  <p class="user__name text__lg">
+                    <strong> {{ slide.username }} </strong>
+                  </p>
+                  <p class="user__role text__lg text-uppercase">
+                    {{ slide.role }}
+                  </p>
+                </v-card>
+              </v-carousel-item>
+            </v-carousel>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      slides: [
+        {
+          src: require('@/assets/images/hero_bg.png'),
+          username: 'Linda',
+          text: 'Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.',
+          role: 'developer',
+        },
+        {
+          src: require('@/assets/images/hero_bg.png'),
+          username: 'Linda',
+          text: 'Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.',
+          role: 'developer',
+        },
+        {
+          src: require('@/assets/images/hero_bg.png'),
+          username: 'Linda',
+          text: 'Themes in the Mobirise website builder offer multiple blocks: intros, sliders, galleries, forms, articles, and so on. Start a project and click on the red plus buttons to see the blocks available for your theme.',
+          role: 'developer',
+        },
+      ],
+    }
+  },
+}
+</script>
+
+<style lang="scss" scoped>
+.testimonials {
+  min-height: 100vh;
+  background-color: #fff;
+}
+</style>

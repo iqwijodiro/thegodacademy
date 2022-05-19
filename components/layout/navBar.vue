@@ -33,7 +33,7 @@
             </nuxt-link>
             <!-- <v-col> -->
             <nuxt-link to="/" class="nav__link ma-4">
-              <v-menu open-on-hover bottom offset-y>
+              <v-menu dark open-on-hover bottom offset-y>
                 <template #activator="{ on, attrs }">
                   <h3 v-bind="attrs" v-on="on">
                     Formación

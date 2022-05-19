@@ -19,13 +19,20 @@
         <v-row justify="center">
           <v-col cols="12" md="6">
             <div class="image__wrapper">
-              <v-img :src="require('~/assets/images/hands.jpeg')" />
+              <v-img
+                :src="require('~/assets/images/hands.jpeg')"
+                contain
+                class="mx-2"
+              />
               <p class="text__mid text-center my-4">
                 Adquiere los Nuestros Ebooks Gratuitos
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="6"></v-col>
+          <v-col cols="12" md="6">
+            <v-img :src="require('~/assets/images/bible.jpeg')" />
+            <p class="text__mid text-center my-4">Blogs</p>
+          </v-col>
         </v-row>
       </v-container>
     </section>
@@ -44,6 +51,7 @@ export default { components: { MyBtn } }
   .section__title-xl {
     font-size: 4.6rem;
     line-height: 1.1;
+    color: #fff;
   }
   .actions {
     display: flex;
