@@ -5,13 +5,13 @@
         <v-col
           cols="12"
           md="10"
-          class="verse__wrapper"
+          class="verse__wrapper pa-0"
           style="
-            border-top: 2px solid #00ffe9;
-            border-bottom: 2px solid #00ffe9;
+            border-top: 3px solid #00ffe9;
+            border-bottom: 3px solid #00ffe9;
           "
         >
-          <p class="mt-6">
+          <p class="mt-6 text__special">
             Nacimos del corazón de Dios para traer formación <br />
             que te lleve a la Construcción de una Relación con <br />
             El Espíritu de Dios. Únete a nuestra comunidad.
@@ -27,16 +27,15 @@
 <style lang="scss" scoped>
 .verse {
   background-color: #fff;
-  color: #232323;
+  color: #383838;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 .verse__wrapper {
-  border-top: 2px solid $green-primary !important;
+  max-width: 950px !important;
 }
-p {
-  font-size: 2rem;
-  font-family: 'Jost', sans-serif;
+p.text__special {
   text-align: center;
+  margin: 1.5rem 0;
 }
 </style>

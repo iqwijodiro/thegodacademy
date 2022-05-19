@@ -1,13 +1,19 @@
 <template>
-  <section class="top py-14">
+  <section class="top">
     <v-container>
-      <h2 class="text-center mb-14">Lo más Popular</h2>
+      <h2 class="section__title text-center mb-14">Lo más Popular</h2>
       <v-row justify="center">
-        <v-col v-for="course in courses" :key="course.title" cols="12" md="4">
+        <v-col
+          v-for="course in courses"
+          :key="course.title"
+          cols="12"
+          md="4"
+          class="px-4 mx-0 mb-8"
+        >
           <course-card
             :img-link="course.imgSrc"
             width="100%"
-            max-width="350"
+            max-width="380"
             height="100%"
             min-height="600"
             :title="course.title"
@@ -30,26 +36,23 @@ export default {
     return {
       courses: [
         {
-          imgSrc:
-            'https://r.mobirisesite.com/204435/assets/images/recurso-1logos-a-fondo-696x696.png?v=1NO9d3',
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
           title: 'Cursos',
           subtitle: 'Formacion por temas',
           description:
             'Mobirise is an easy website builder. Just drop site elements to your page, add content and style it to look the way you like.',
         },
         {
-          imgSrc:
-            'https://r.mobirisesite.com/204435/assets/images/recurso-1logos-a-fondo-696x696.png?v=1NO9d3',
-          title: 'Cursos',
-          subtitle: 'Formacion por temas',
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'Programas',
+          subtitle: 'Formacion por estudios',
           description:
             'You dont have to code to create your own site. Select one of available themes in the Mobirise Site Maker.',
         },
         {
-          imgSrc:
-            'https://r.mobirisesite.com/204435/assets/images/recurso-1logos-a-fondo-696x696.png?v=1NO9d3',
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
           title: 'Cursos',
-          subtitle: 'Formacion por temas',
+          subtitle: 'Formacion para Grupos',
           description:
             'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
         },
@@ -64,10 +67,7 @@ export default {
   min-height: 80vh;
   background-color: #fff;
   h2 {
-    font-family: $title-font;
-    color: #242424;
-    font-weight: bold;
-    font-size: 3rem;
+    color: #383838;
   }
 }
 </style>

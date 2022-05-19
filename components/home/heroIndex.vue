@@ -1,4 +1,3 @@
-import myBtn from '~/components/buttons/myBtn.vue';
 <template>
   <section class="hero d-flex justify-center align-end pb-12">
     <v-container class="pb-10 mb-10">

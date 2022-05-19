@@ -3,10 +3,16 @@
 // The variables you want to modify
 // $font-size-root: 20px;
 
-$green-primary: '#00ffe9';
-$purple-secondary: '#766eff';
-$blue-hover: '#2417ff';
+$green-primary: #00ffe9;
+$green-hover: #00a89a;
+$purple-secondary: #766eff;
+$blue-hover: #2417ff;
 
 // Fonts
 
+$general-font: 'Poppins', sans-serif;
+$title-font: 'Poiret One', cursive;
+$special-font: 'Jost', sans-serif;
+
+@import 'mixins';
 @import 'generalStyles';

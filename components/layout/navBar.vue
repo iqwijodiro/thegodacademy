@@ -29,16 +29,16 @@
               :to="link.url"
               class="nav__link ma-4"
             >
-              <h2>{{ link.title }}</h2>
+              <h3>{{ link.title }}</h3>
             </nuxt-link>
             <!-- <v-col> -->
             <nuxt-link to="/" class="nav__link ma-4">
               <v-menu open-on-hover bottom offset-y>
                 <template #activator="{ on, attrs }">
-                  <h2 v-bind="attrs" v-on="on">
+                  <h3 v-bind="attrs" v-on="on">
                     Formación
                     <v-icon color="#fff"> mdi-menu-down </v-icon>
-                  </h2>
+                  </h3>
                 </template>
                 <v-list class="nav">
                   <v-list-item v-for="(droplink, i) in dropdown" :key="i">
@@ -47,9 +47,9 @@
                         :to="droplink.url"
                         class="nav__link nav__link-drop"
                       >
-                        <h2>
+                        <h3>
                           {{ droplink.title }}
-                        </h2>
+                        </h3>
                       </nuxt-link>
                     </v-list-item-title>
                   </v-list-item>
@@ -57,7 +57,7 @@
               </v-menu>
             </nuxt-link>
             <nuxt-link to="/contact" class="nav__link ma-4">
-              <h2>Contáctanos</h2>
+              <h3>Contáctanos</h3>
             </nuxt-link>
             <div class="d-flex justify-center align-center mx-5">
               <my-btn
@@ -114,7 +114,7 @@ export default {
 .nav {
   .nav__link,
   .nav__link.nav__link-drop {
-    h2 {
+    h3 {
       color: #fff !important;
     }
   }

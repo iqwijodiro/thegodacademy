@@ -83,7 +83,7 @@ export default {}
     margin: 0 0.5rem 1rem 0;
   }
 }
-@media screen and (max-width: 700px) {
+@include respond(phone) {
   .footer {
     padding: 5rem 0 !important;
   }

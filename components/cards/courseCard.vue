@@ -91,22 +91,6 @@ export default {
 
 <style lang="scss" scoped>
 .course__card {
-  // opacity: 0.75;
-  .img-course {
-    width: 100%;
-    height: 100%;
-    // filter: grayscale(50%);
-    transition: all 0.4s ease-in-out;
-  }
-  &:hover {
-    // opacity: 1;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-    // transform: translateY(-5px);
-    // .img-course {
-    //   // filter: none;
-    // }
-  }
   .card__wrapper {
     height: 300px;
     .card__title {
