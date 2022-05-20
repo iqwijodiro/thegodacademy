@@ -17,7 +17,7 @@
     <section class="images">
       <v-container>
         <v-row justify="center">
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" class="order-2 order-sm-1">
             <div class="image__wrapper">
               <v-img
                 :src="require('~/assets/images/hands.jpeg')"
@@ -29,8 +29,12 @@
               </p>
             </div>
           </v-col>
-          <v-col cols="12" md="6">
-            <v-img :src="require('~/assets/images/bible.jpeg')" />
+          <v-col cols="12" md="6" class="order-1 order-sm-2">
+            <v-img
+              :src="require('~/assets/images/bible.jpeg')"
+              contain
+              class="mx-2"
+            />
             <p class="text__mid text-center my-4">Blogs</p>
           </v-col>
         </v-row>
@@ -58,6 +62,16 @@ export default { components: { MyBtn } }
     justify-content: center;
     align-items: center;
     padding: 0.6rem 1.2rem;
+  }
+}
+.images {
+  p {
+    color: #fff;
+  }
+}
+@include respond(phone) {
+  .section__title-xl {
+    font-size: 2.6rem !important;
   }
 }
 </style>

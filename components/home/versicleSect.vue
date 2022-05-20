@@ -5,7 +5,7 @@
         <v-col
           cols="12"
           md="10"
-          class="verse__wrapper pa-0"
+          class="verse__wrapper px-5 pa-sm-0"
           style="
             border-top: 3px solid #00ffe9;
             border-bottom: 3px solid #00ffe9;
@@ -37,5 +37,13 @@
 p.text__special {
   text-align: center;
   margin: 1.5rem 0;
+}
+
+@include respond(phone) {
+  .verse__wrapper {
+    p {
+      font-size: 1.4rem;
+    }
+  }
 }
 </style>

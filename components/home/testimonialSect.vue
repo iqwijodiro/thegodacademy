@@ -14,21 +14,23 @@
                 <v-card
                   flat
                   height="100%"
-                  max-width="80%"
-                  class="d-flex justify-center align-center flex-column px-10 mx-auto"
+                  :max-width="$vuetify.breakpoint.smAndUp ? '80%' : '100%'"
+                  class="d-flex justify-center align-center flex-column pa-0 px-sm-10 mx-auto"
                 >
                   <v-avatar size="200" class="mb-5" style="border-radius: 50%">
-                    <v-img :src="slide.src" />
+                    <img :src="slide.src" width="200" height="200" />
                   </v-avatar>
-                  <p class="text__lg mt-8">
-                    {{ slide.text }}
-                  </p>
-                  <p class="user__name text__lg">
-                    <strong> {{ slide.username }} </strong>
-                  </p>
-                  <p class="user__role text__lg text-uppercase">
-                    {{ slide.role }}
-                  </p>
+                  <div class="text__wrapper">
+                    <p class="text__lg mt-8">
+                      {{ slide.text }}
+                    </p>
+                    <p class="user__name text__lg">
+                      <strong> {{ slide.username }} </strong>
+                    </p>
+                    <p class="user__role text__lg text-uppercase">
+                      {{ slide.role }}
+                    </p>
+                  </div>
                 </v-card>
               </v-carousel-item>
             </v-carousel>
@@ -70,7 +72,6 @@ export default {
 
 <style lang="scss" scoped>
 .testimonials {
-  min-height: 100vh;
   background-color: #fff;
 }
 </style>

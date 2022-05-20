@@ -2,7 +2,7 @@
   <div class="sharing">
     <section class="video">
       <v-container>
-        <h2 class="section__title text-center mb-12" style="height: 100px">
+        <h2 class="section__title text-center mb-sm-12" style="height: 100px">
           Mantente Conectado
         </h2>
         <v-row align="center">
@@ -14,7 +14,7 @@
                 allowfullscreen
                 width="800"
                 height="600"
-                class="video__item embedded-video"
+                class="video__item embedded-video mt-14 mt-sm-0"
                 style="height: 400px"
               ></iframe>
             </div>
@@ -23,7 +23,7 @@
             </p>
           </v-col>
           <v-col cols="12" md="6" class="py-0 px-4">
-            <div class="text__wrapper pa-8">
+            <div class="text__wrapper px-5 pa-md-8">
               <h3
                 class="section__subtitle text__special mb-4 font-weight-regular"
               >
@@ -124,6 +124,21 @@ export default {
       transition: background-color 0.2s ease-in;
       &:hover {
         opacity: 1;
+      }
+    }
+  }
+}
+@include respond(phone) {
+  .video {
+    .section__title {
+      font-size: 1.9rem;
+    }
+    .text__wrapper {
+      .section__subtitle {
+        font-size: 1.4rem !important;
+      }
+      .text__lg {
+        color: #383838;
       }
     }
   }
