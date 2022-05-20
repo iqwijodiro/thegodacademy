@@ -99,21 +99,6 @@ export default {
 .course__card {
   .card__wrapper {
     height: 300px;
-    .card__title {
-      font-family: $title-font;
-      font-size: 3rem;
-      font-weight: 700;
-      line-height: 1;
-    }
-    .card__subtitle {
-      font-size: 1.2rem;
-      color: #bbb;
-      font-weight: 400;
-    }
-    .card__text {
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
   }
 }
 </style>

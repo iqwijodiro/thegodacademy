@@ -9,8 +9,9 @@
       scroll-threshold="500"
       tag="header"
       color="#000"
+      class="pa-0"
     >
-      <v-container class="d-flex align-center justify-space-between">
+      <v-container class="d-flex align-center justify-space-between px-14">
         <v-app-bar-nav-icon class="pt-2">
           <nuxt-link to="/">
             <v-img
@@ -21,7 +22,7 @@
         </v-app-bar-nav-icon>
         <!-- <v-spacer></v-spacer> -->
         <nav class="nav hidden-sm-and-down transparent">
-          <v-row justify="space-around" class="pt-4">
+          <v-row align="center" class="pt-0">
             <!-- <v-col> -->
             <nuxt-link
               v-for="link in links"
@@ -56,7 +57,7 @@
                 </v-list>
               </v-menu>
             </nuxt-link>
-            <nuxt-link to="/contact" class="nav__link ma-4">
+            <nuxt-link to="/contactUs" class="nav__link ma-4">
               <h3>Contáctanos</h3>
             </nuxt-link>
             <div class="d-flex justify-center align-center mx-5">

@@ -2,8 +2,9 @@
   <v-btn
     nuxt
     depressed
+    x-large
     :to="destiny"
-    class="myBtn rounded-xl"
+    class="myBtn rounded-xl ma-2"
     :class="btnType"
     :color="color"
     @click.prevent="action"
@@ -61,7 +62,7 @@ export default {
 
 <style lang="scss" scoped>
 .myBtn {
-  padding: 1.5rem 1.2rem !important;
+  padding: 0.6rem 1.2rem !important;
   color: #373737 !important;
   transition: all 0.2s ease-out;
   .btn__text {
