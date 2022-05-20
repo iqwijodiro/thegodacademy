@@ -11,7 +11,13 @@
     class="course__card"
   >
     <figure>
-      <v-img :src="imgLink" height="200px" class="ma-0 pa-0" :alt="title">
+      <v-img
+        loading="lazy"
+        :src="imgLink"
+        height="200px"
+        class="ma-0 pa-0"
+        :alt="title"
+      >
       </v-img>
     </figure>
     <div class="card__wrapper px-8 pt-8">

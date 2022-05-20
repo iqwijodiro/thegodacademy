@@ -8,6 +8,7 @@ h1,
 h2 {
   font-family: $title-font !important;
   font-weight: 700;
+  line-height: 1.1;
 }
 h1 {
   font-size: 4.6rem;
@@ -15,7 +16,6 @@ h1 {
 
 h2.section__title {
   font-size: 3rem;
-  color: #383838;
 }
 
 h3,
@@ -47,10 +47,10 @@ iframe {
   display: block;
   max-width: 100%;
 }
+
 ul,
 .list {
   list-style-type: none;
-  // text-indent: -1.5rem;
   padding: 0;
   font-size: 1.1rem;
   line-height: 1.7;
@@ -70,4 +70,25 @@ ul,
 .text__special {
   font-size: 2rem;
   font-family: $special-font;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+.bg-dark {
+  background-color: #000 !important;
+}
+.bg-green {
+  background-color: $green-primary !important;
+}
+
+.font-dark {
+  color: #383838;
+}
+.font-light {
+  color: #fff;
+}
+
+.font-purple {
+  color: $purple-secondary;
 }

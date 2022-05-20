@@ -36,7 +36,6 @@ export default {
   background-position: 50% 50%;
   .hero__title {
     color: #fff;
-    line-height: 1.1;
   }
   .hero__subtitle {
     color: #fff;

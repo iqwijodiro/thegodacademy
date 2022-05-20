@@ -10,16 +10,22 @@
           md="4"
           class="px-4 mx-0 mb-8"
         >
-          <course-card
-            :img-link="course.imgSrc"
-            width="100%"
-            max-width="380"
-            height="100%"
-            min-height="600"
-            :title="course.title"
-            :subtitle="course.subtitle"
-            :description="course.description"
-          />
+          <v-lazy
+            v-model="isActive"
+            :options="{ threshold: 0.5 }"
+            transition="scroll-y-reverse-transition"
+          >
+            <course-card
+              :img-link="course.imgSrc"
+              width="100%"
+              max-width="380"
+              height="100%"
+              min-height="600"
+              :title="course.title"
+              :subtitle="course.subtitle"
+              :description="course.description"
+            />
+          </v-lazy>
         </v-col>
       </v-row>
     </v-container>
@@ -34,6 +40,7 @@ export default {
   },
   data() {
     return {
+      isActive: false,
       courses: [
         {
           imgSrc: require('~/assets/images/logo_brand_card_square.png'),

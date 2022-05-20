@@ -12,6 +12,7 @@
                 src="https://www.youtube.com/embed/kLjnDzJh4_U?rel=0&amp;showinfo=0&autoplay=1&loop=0"
                 frameborder="0"
                 allowfullscreen
+                loading="lazy"
                 width="800"
                 height="600"
                 class="video__item embedded-video mt-14 mt-sm-0"

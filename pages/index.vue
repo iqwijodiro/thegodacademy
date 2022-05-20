@@ -6,6 +6,7 @@
     <stay-Connected />
     <new-born />
     <testimonial-sect />
+    <client-sect />
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import TopCourses from '~/components/home/topCourses.vue'
 import StayConnected from '~/components/home/stayConnected.vue'
 import NewBorn from '~/components/home/newBorn.vue'
 import TestimonialSect from '~/components/home/testimonialSect.vue'
+import ClientSect from '~/components/home/clientSect.vue'
 export default {
   name: 'HeroIndex',
   components: {
@@ -25,6 +27,7 @@ export default {
     StayConnected,
     NewBorn,
     TestimonialSect,
+    ClientSect,
   },
 }
 </script>

@@ -18,7 +18,7 @@
                   class="d-flex justify-center align-center flex-column pa-0 px-sm-10 mx-auto"
                 >
                   <v-avatar size="200" class="mb-5" style="border-radius: 50%">
-                    <img :src="slide.src" width="200" height="200" />
+                    <v-img :src="slide.src" width="200" height="200" />
                   </v-avatar>
                   <div class="text__wrapper">
                     <p class="text__lg mt-8">

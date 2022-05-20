@@ -88,7 +88,7 @@ export default {
         },
         {
           title: 'Nosotros',
-          url: '/nosotros',
+          url: '/aboutUs',
         },
       ],
       dropdown: [
