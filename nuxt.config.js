@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -64,20 +64,21 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
-      themes: {
-        dark: {
-          primary: '#00ffe9', // Green lime
-          accent: colors.grey.darken3,
-          secondary: '#766eff', // Purple
-          info: colors.teal.lighten2,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
+    treeShake: true,
+    // theme: {
+    //   dark: false,
+    //   themes: {
+    //     dark: {
+    //       primary: '#00ffe9', // Green lime
+    //       accent: colors.grey.darken3,
+    //       secondary: '#766eff', // Purple
+    //       info: colors.teal.lighten2,
+    //       warning: colors.amber.base,
+    //       error: colors.deepOrange.accent4,
+    //       success: colors.green.accent3,
+    //     },
+    //   },
+    // },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -33,7 +33,7 @@
               <h3>{{ link.title }}</h3>
             </nuxt-link>
             <!-- <v-col> -->
-            <nuxt-link to="/" class="nav__link ma-4">
+            <nuxt-link to="/trainingCenter" class="nav__link ma-4">
               <v-menu dark open-on-hover bottom offset-y>
                 <template #activator="{ on, attrs }">
                   <h3 v-bind="attrs" v-on="on">
@@ -95,11 +95,11 @@ export default {
       dropdown: [
         {
           title: 'Cursos',
-          url: '/courses',
+          url: '/trainingCenter/#courses',
         },
         {
           title: 'Programas',
-          url: '/programs',
+          url: '/trainingCenter/#programs',
         },
         {
           title: 'ForGroups',

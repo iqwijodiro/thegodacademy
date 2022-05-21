@@ -4,13 +4,16 @@ body::before {
   font-family: $general-font !important;
 }
 
+// Headings styles
 h1,
-h2 {
+h2,
+.title__xl {
   font-family: $title-font !important;
   font-weight: 700;
   line-height: 1.1;
 }
-h1 {
+h1,
+.title__xl {
   font-size: 4.6rem;
 }
 
@@ -24,6 +27,8 @@ h3,
   color: #fff;
   font-weight: 500;
 }
+
+// other style´s elements
 
 a {
   text-decoration: none;
@@ -56,6 +61,7 @@ ul,
   line-height: 1.7;
 }
 
+// Fonts & text styles
 .text__lg {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -71,7 +77,20 @@ ul,
   font-size: 2rem;
   font-family: $special-font;
 }
+.font-dark {
+  color: #383838;
+}
+.font-light {
+  color: #fff;
+}
+.font-purple {
+  color: $purple-secondary;
+}
+.font-blue {
+  color: #0095ff;
+}
 
+// Backgrounds
 .bg-light {
   background-color: #fff !important;
 }
@@ -81,16 +100,8 @@ ul,
 .bg-green {
   background-color: $green-primary !important;
 }
-
-.font-dark {
-  color: #383838;
-}
-.font-light {
-  color: #fff;
-}
-
-.font-purple {
-  color: $purple-secondary;
+.bg-purple {
+  background-color: $purple-secondary !important;
 }
 
 .card__title {
