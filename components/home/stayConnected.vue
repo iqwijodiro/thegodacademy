@@ -15,7 +15,7 @@
                 loading="lazy"
                 width="800"
                 height="600"
-                class="video__item embedded-video mt-14 mt-sm-0"
+                class="video__item embedded-video mt-14 mt-sm-0 rounded-lg"
                 style="height: 400px"
               ></iframe>
             </div>

@@ -1,5 +1,7 @@
 <template>
-  <section class="hero d-flex justify-center align-center align-md-end pb-12">
+  <section
+    class="hero d-flex justify-center align-center align-md-center pb-12"
+  >
     <v-container class="pb-10 mb-10">
       <v-row>
         <v-col cols="12" md="5" class="content__wrapper">
