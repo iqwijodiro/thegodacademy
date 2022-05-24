@@ -4,11 +4,15 @@
       <v-container>
         <v-row justify="center">
           <v-col cols="12" md="8">
-            <h2 class="section__title-xl text-center mb-8">
+            <h2 v-animate-on-scroll class="section__title-xl text-center mb-8">
               Este próximo segundo cambiará tu vida
             </h2>
             <div class="actions">
-              <my-btn color="secondary" text="Un nuevo nacimiento" />
+              <my-btn
+                v-animate-on-scroll
+                color="secondary"
+                text="Un nuevo nacimiento"
+              />
             </div>
           </v-col>
         </v-row>
@@ -16,7 +20,7 @@
     </section>
     <section class="images">
       <v-container>
-        <v-row justify="center">
+        <v-row v-animate-on-scroll justify="center">
           <v-col cols="12" md="6" class="order-2 order-sm-1">
             <div class="image__wrapper">
               <v-img

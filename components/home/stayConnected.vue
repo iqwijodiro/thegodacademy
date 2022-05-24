@@ -2,13 +2,18 @@
   <div class="sharing">
     <section class="video">
       <v-container>
-        <h2 class="section__title text-center mb-sm-12" style="height: 100px">
+        <h2
+          v-animate-on-scroll
+          class="section__title text-center mb-sm-12"
+          style="height: 100px"
+        >
           Mantente Conectado
         </h2>
         <v-row align="center">
           <v-col cols="12" md="6" class="py-0 px-4">
             <div class="video__wrapper">
               <iframe
+                v-animate-on-scroll
                 src="https://www.youtube.com/embed/kLjnDzJh4_U?rel=0&amp;showinfo=0&autoplay=1&loop=0"
                 frameborder="0"
                 allowfullscreen
@@ -19,13 +24,17 @@
                 style="height: 400px"
               ></iframe>
             </div>
-            <p class="video__description text-center text__mid pt-2 mb-4">
+            <p
+              v-animate-on-scroll
+              class="video__description text-center text__mid pt-2 mb-4"
+            >
               Bienvenido a Theo Academy
             </p>
           </v-col>
           <v-col cols="12" md="6" class="py-0 px-4">
             <div class="text__wrapper px-5 pa-md-8">
               <h3
+                v-animate-on-scroll
                 class="section__subtitle text__special mb-4 font-weight-regular"
               >
                 <strong>
@@ -33,7 +42,7 @@
                   Bíblica.
                 </strong>
               </h3>
-              <p class="text__lg">
+              <p v-animate-on-scroll class="text__lg">
                 Estudiemos juntos el indudable valor de las escrituras en el
                 proceso de nuestra transformación interna, caminando hacia la
                 mente de Cristo
@@ -47,7 +56,10 @@
       <v-container>
         <v-row justify="center">
           <v-col cols="12" class="py-0">
-            <div class="social__list d-flex justify-center align-center">
+            <div
+              v-animate-on-scroll
+              class="social__list d-flex justify-center align-center"
+            >
               <a
                 v-for="social in socials"
                 :key="social.name"

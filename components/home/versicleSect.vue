@@ -11,7 +11,7 @@
             border-bottom: 3px solid #00ffe9;
           "
         >
-          <p class="mt-6 text__special">
+          <p v-animate-on-scroll class="mt-6 text__special">
             Nacimos del corazón de Dios para traer formación <br />
             que te lleve a la Construcción de una Relación con <br />
             El Espíritu de Dios. Únete a nuestra comunidad.

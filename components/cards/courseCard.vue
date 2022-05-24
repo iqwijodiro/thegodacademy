@@ -12,7 +12,7 @@
   >
     <figure>
       <v-img
-        loading="lazy"
+        v-animate-on-scroll
         :src="imgLink"
         height="200px"
         class="ma-0 pa-0"
@@ -21,20 +21,25 @@
       </v-img>
     </figure>
     <div class="card__wrapper px-8 pt-8">
-      <h2 class="card__title mb-2 pa-0">
+      <h2 v-animate-on-scroll class="card__title mb-2 pa-0">
         <strong>
           {{ title }}
         </strong>
       </h2>
-      <h3 class="card__subtitle mt-1 mb-2 mx-0 pa-0">
+      <h3 v-animate-on-scroll class="card__subtitle mt-1 mb-2 mx-0 pa-0">
         {{ subtitle }}
       </h3>
-      <p class="card__text pa-0 my-4">
+      <p v-animate-on-scroll class="card__text pa-0 my-4">
         {{ description }}
       </p>
     </div>
     <div class="px-8 pb-8">
-      <my-btn text="Start Now" destiny="/courses" color="primary" />
+      <my-btn
+        v-animate-on-scroll
+        text="Start Now"
+        destiny="/courses"
+        color="primary"
+      />
       <!-- @click="selectCourse(course)" -->
     </div>
   </v-card>

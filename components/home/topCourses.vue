@@ -1,7 +1,9 @@
 <template>
   <section class="top">
     <v-container>
-      <h2 class="section__title text-center mb-14">Lo más Popular</h2>
+      <h2 v-animate-on-scroll class="section__title text-center mb-14">
+        Lo más Popular
+      </h2>
       <v-row justify="center">
         <v-col
           v-for="course in courses"
@@ -52,7 +54,7 @@ export default {
         },
         {
           imgSrc: require('~/assets/images/logo_brand_card_square.png'),
-          title: 'Cursos',
+          title: 'For Groups',
           subtitle: 'Formacion para Grupos',
           description:
             'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
