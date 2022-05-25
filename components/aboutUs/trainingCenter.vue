@@ -2,7 +2,12 @@
   <section class="training bg-dark">
     <v-container>
       <v-row justify="center">
-        <v-col cols="12" md="6" class="px-5 font-light px-sm-12">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="6"
+          class="px-5 font-light px-sm-12"
+        >
           <h2 class="section__title mb-4 font-light">
             Como Centro de Formación
           </h2>
@@ -19,7 +24,12 @@
             <span class="font-purple"> cursos publicados. </span>
           </p>
         </v-col>
-        <v-col cols="12" md="6" class="px-5 px-sm-8 font-light text-center">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="6"
+          class="px-5 px-sm-8 font-light text-center"
+        >
           <v-img
             :src="require('~/assets/images/logo-cutted.png')"
             contain

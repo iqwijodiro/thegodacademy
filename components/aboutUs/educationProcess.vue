@@ -2,7 +2,12 @@
   <section class="process bg-light">
     <v-container>
       <v-row justify="center" align="center">
-        <v-col cols="12" md="6" class="px-5 px-sm-4 font-dark text-center">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="6"
+          class="px-5 px-sm-4 font-dark text-center"
+        >
           <div class="image__wrapper">
             <v-img
               :src="require('~/assets/images/logo_brand_card_square.png')"
@@ -12,7 +17,12 @@
             <p class="text__mid mt-2">1 Timoteo 2:14</p>
           </div>
         </v-col>
-        <v-col cols="12" md="6" class="px-5 font-dark px-sm-12">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="6"
+          class="px-5 font-dark px-sm-12"
+        >
           <div class="text__wrapper">
             <h2 class="section__title mb-4 font-dark">
               Como acompañantes en el proceso de educación

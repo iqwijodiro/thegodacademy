@@ -1,7 +1,7 @@
 <template>
   <section class="courses">
     <v-container class="text-center pb-15">
-      <h2 class="title__xl mb-8">Cursos</h2>
+      <h2 v-animate-on-scroll class="title__xl mb-8">Cursos</h2>
     </v-container>
     <section class="bg-purple">
       <v-container class="px-4 py-0">
@@ -10,7 +10,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Cursos
                     </h4>
@@ -22,7 +22,7 @@
                       el desarrollo de una fe firme y trascendental.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       color="secondary"
                       text="Más detalles"
@@ -31,7 +31,7 @@
                     />
                   </div>
                 </v-col>
-                <v-col cols="12" md="5" class="py-0 px-4">
+                <v-col v-animate-on-scroll cols="12" md="5" class="py-0 px-4">
                   <v-img
                     :src="require('../../assets/images/transparente.png')"
                   />
@@ -43,7 +43,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Cursos
                     </h4>
@@ -56,7 +56,7 @@
                       autor de la vida.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       text="Más detalles"
                       destiny="/trainingCenter/#courses"
@@ -66,6 +66,7 @@
                 </v-col>
                 <v-col cols="12" md="5" class="py-0 px-4">
                   <v-img
+                    v-animate-on-scroll
                     :src="require('../../assets/images/transparente.png')"
                   />
                 </v-col>

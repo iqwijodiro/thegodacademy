@@ -19,7 +19,7 @@ import NewBorn from '~/components/home/newBorn.vue'
 import TestimonialSect from '~/components/home/testimonialSect.vue'
 import ClientSect from '~/components/home/clientSect.vue'
 export default {
-  name: 'HeroIndex',
+  name: 'HomePage',
   components: {
     heroIndex,
     VersicleSect,
@@ -28,6 +28,11 @@ export default {
     NewBorn,
     TestimonialSect,
     ClientSect,
+  },
+  head() {
+    return {
+      title: 'Formación cristiana y teológica online',
+    }
   },
 }
 </script>

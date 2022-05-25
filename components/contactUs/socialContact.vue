@@ -4,8 +4,10 @@
       <v-container class="pa-0">
         <v-row justify="center">
           <v-col cols="12" md="11" class="py-0 px-4 px-sm-8 text-center">
-            <h2 class="section__title mb-8">Es importante que sepas</h2>
-            <p class="text__lg font-dark">
+            <h2 v-animate-on-scroll class="section__title mb-8">
+              Es importante que sepas
+            </h2>
+            <p v-animate-on-scroll class="text__lg font-dark">
               Somos un espacio virtual y nuestra comunicación será via
               plataformas digitales, las llamadas aplican en video conferencia,
               en caso que tengamos agentes autorizados para asistirte en tu país
@@ -21,24 +23,32 @@
         <v-row justify="center" align="center">
           <v-col cols="12" md="6" class="">
             <v-img
+              v-animate-on-scroll
               width="100%"
               height="300px"
               alt=""
               :src="require('~/assets/images/transparente.png')"
             />
-            <div class="text__wrapper pa-sm-8 px-5 text-center">
+            <div
+              v-animate-on-scroll
+              class="text__wrapper pa-sm-8 px-5 text-center"
+            >
               <h2 class="section__subtitle mb-2">Instagram</h2>
               <my-btn text="Comenta" color="primary" class="ma-2" />
             </div>
           </v-col>
           <v-col cols="12" md="6">
             <v-img
+              v-animate-on-scroll
               width="100%"
               height="300px"
               alt=""
               :src="require('~/assets/images/transparente.png')"
             />
-            <div class="text__wrapper pa-sm-8 px-5 text-center">
+            <div
+              v-animate-on-scroll
+              class="text__wrapper pa-sm-8 px-5 text-center"
+            >
               <h2 class="section__subtitle mb-2">Facebook</h2>
               <my-btn text="Dale Like" class="btnFB" />
             </div>
@@ -47,24 +57,32 @@
         <v-row justify="center" align="center">
           <v-col cols="12" md="6">
             <v-img
+              v-animate-on-scroll
               width="100%"
               height="300px"
               alt=""
               :src="require('~/assets/images/transparente.png')"
             />
-            <div class="text__wrapper pa-sm-8 px-5 text-center">
+            <div
+              v-animate-on-scroll
+              class="text__wrapper pa-sm-8 px-5 text-center"
+            >
               <h2 class="section__subtitle mb-2">Youtube</h2>
               <my-btn text="Subscribete" class="btnYT" />
             </div>
           </v-col>
           <v-col cols="12" md="6">
             <v-img
+              v-animate-on-scroll
               width="100%"
               height="300px"
               alt=""
               :src="require('~/assets/images/transparente.png')"
             />
-            <div class="text__wrapper pa-sm-8 px-5 text-center">
+            <div
+              v-animate-on-scroll
+              class="text__wrapper pa-sm-8 px-5 text-center"
+            >
               <h2 class="section__subtitle mb-2">Nuestra Web</h2>
               <my-btn text="Visítanos" color="secondary" />
             </div>

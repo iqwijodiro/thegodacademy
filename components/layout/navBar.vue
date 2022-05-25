@@ -1,22 +1,23 @@
 <template>
   <div id="navbar">
     <v-app-bar
+      ref="navbar"
       app
-      elevate-on-scroll
-      height="95px"
-      min-height="70px"
+      :height="height"
+      :min-height="minHeight"
       shrink-on-scroll
-      scroll-threshold="500"
+      :scroll-threshold="scrollAm"
       tag="header"
       color="#000"
-      class="pa-0"
+      class="px-0 py-5"
     >
-      <v-container class="d-flex align-center justify-space-between px-14">
+      <v-container class="d-flex align-center justify-space-between px-14 py-0">
         <v-app-bar-nav-icon class="pt-2">
           <nuxt-link to="/">
             <v-img
               :src="require('~/assets/images/logo-brand.png')"
-              max-width="100%"
+              max-width="80%"
+              contain
             />
           </nuxt-link>
         </v-app-bar-nav-icon>
@@ -81,6 +82,10 @@ export default {
   components: { myBtn },
   data() {
     return {
+      isShrinking: false,
+      height: 95,
+      minHeight: 70,
+      scrollAm: 300,
       tabs: false,
       links: [
         {

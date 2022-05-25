@@ -1,7 +1,7 @@
 <template>
   <section class="programs pb-0">
     <v-container class="text-center pb-15">
-      <h2 class="title__xl mb-8">Programas</h2>
+      <h2 v-animate-on-scroll class="title__xl mb-8">Programas</h2>
     </v-container>
     <section class="bg__dark-mid">
       <v-container class="px-4 py-0">
@@ -10,7 +10,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Programas
                     </h4>
@@ -23,7 +23,7 @@
                       maravillosa experiencia de vivir como hijo (a) de Dios.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       text="Más detalles"
                       destiny="/trainingCenter/#courses"
@@ -33,6 +33,7 @@
                 </v-col>
                 <v-col cols="12" md="5" class="py-0 px-4">
                   <v-img
+                    v-animate-on-scroll
                     :src="
                       require('../../assets/images/logo_brand_card_square.png')
                     "
@@ -45,7 +46,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Programas
                     </h4>
@@ -58,7 +59,7 @@
                       acompañarle en un proceso de sanidad.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       color="secondary"
                       text="Más detalles"
@@ -69,6 +70,7 @@
                 </v-col>
                 <v-col cols="12" md="5" class="py-0 px-4">
                   <v-img
+                    v-animate-on-scroll
                     :src="
                       require('../../assets/images/logo_brand_card_square.png')
                     "
@@ -87,7 +89,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Programas
                     </h4>
@@ -100,7 +102,7 @@
                       maravillosa experiencia de vivir como hijo (a) de Dios.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       text="Más detalles"
                       destiny="/trainingCenter/#courses"
@@ -110,6 +112,7 @@
                 </v-col>
                 <v-col cols="12" md="5" class="py-0 px-4">
                   <v-img
+                    v-animate-on-scroll
                     :src="
                       require('../../assets/images/logo_brand_card_square.png')
                     "
@@ -122,7 +125,7 @@
             <v-card flat class="pa-8">
               <v-row justify="center" align="center" class="ma-1">
                 <v-col cols="12" md="7" class="pa-0">
-                  <div class="text__wrapper">
+                  <div v-animate-on-scroll class="text__wrapper">
                     <h4 class="font-blue text__mid font-weight-light mb-3">
                       Programas
                     </h4>
@@ -135,7 +138,7 @@
                       acompañarle en un proceso de sanidad.
                     </p>
                   </div>
-                  <div class="card__actions">
+                  <div v-animate-on-scroll class="card__actions">
                     <my-btn
                       color="secondary"
                       text="Más detalles"
@@ -146,6 +149,7 @@
                 </v-col>
                 <v-col cols="12" md="5" class="py-0 px-4">
                   <v-img
+                    v-animate-on-scroll
                     :src="
                       require('../../assets/images/logo_brand_card_square.png')
                     "

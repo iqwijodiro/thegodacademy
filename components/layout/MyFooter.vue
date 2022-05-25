@@ -2,7 +2,12 @@
   <footer class="footer text-center text-md-left">
     <v-container>
       <v-row>
-        <v-col cols="12" md="3" class="mb-5 py-0 px-5 px-md-4">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="3"
+          class="mb-5 py-0 px-5 px-md-4"
+        >
           <h5 class="text__lg mb-2">
             <strong>Contactos</strong>
           </h5>
@@ -13,7 +18,12 @@
             <li>Nuestra plataforma</li>
           </ul>
         </v-col>
-        <v-col cols="12" md="3" class="mb-5 py-0 px-5 px-md-4">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="3"
+          class="mb-5 py-0 px-5 px-md-4"
+        >
           <h5 class="text__lg mb-2"><strong>Formación</strong></h5>
           <ul class="list">
             <li>Cursos</li>
@@ -21,7 +31,12 @@
             <li>ForGroup</li>
           </ul>
         </v-col>
-        <v-col cols="12" md="3" class="mb-5 py-0 px-5 px-md-4">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="3"
+          class="mb-5 py-0 px-5 px-md-4"
+        >
           <h5 class="text__lg mb-2">
             <strong>Lo más popular</strong>
           </h5>
@@ -31,7 +46,12 @@
             <li>Programa Teologico para iglesias</li>
           </ul>
         </v-col>
-        <v-col cols="12" md="3" class="mb-5 py-0 px-5 px-md-4">
+        <v-col
+          v-animate-on-scroll
+          cols="12"
+          md="3"
+          class="mb-5 py-0 px-5 px-md-4"
+        >
           <h5 class="text__lg mb-2">
             <strong>Nosotros</strong>
           </h5>
@@ -43,6 +63,7 @@
             <strong>Social</strong>
           </h5>
           <div
+            v-animate-on-scroll
             class="my-3 d-flex flex-wrap align-center justify-center justify-md-start"
           >
             <div class="soc-item">

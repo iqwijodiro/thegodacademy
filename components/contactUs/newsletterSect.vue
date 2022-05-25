@@ -3,13 +3,13 @@
     <v-container>
       <v-row justify="center" align="center">
         <v-col cols="12" md="9">
-          <div class="text__wrapper text-center">
+          <div v-animate-on-scroll class="text__wrapper text-center">
             <h2 class="section__title mb-8">Suscribete a nuestra Newsletter</h2>
             <p class="text__lg mb-12">
               Enterate de las principales noticias de The God Academy
             </p>
           </div>
-          <div class="form__wrapper">
+          <div v-animate-on-scroll class="form__wrapper">
             <v-form ref="form" v-model="validForm">
               <v-row justify="center" align="start">
                 <v-col cols="12" md="4" class="py-0 my-0">

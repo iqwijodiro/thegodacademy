@@ -3,12 +3,12 @@
     <v-container>
       <v-row justify="center" align="center">
         <v-col cols="12" md="9">
-          <div class="text__wrapper text-center">
+          <div v-animate-on-scroll class="text__wrapper text-center">
             <h2 class="section__title mb-8">
               Busca lo mejor en Cursos y programas
             </h2>
           </div>
-          <div class="form__wrapper">
+          <div v-animate-on-scroll class="form__wrapper">
             <v-form ref="form" v-model="validForm">
               <v-row justify="center" align="start" class="mt-8">
                 <v-col cols="12" md="3" class="py-0 my-0">

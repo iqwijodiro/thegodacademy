@@ -3,7 +3,7 @@
     <v-container>
       <v-row justify="center" align="center">
         <v-col cols="12" md="6" class="px-3">
-          <div class="text__wrapper font-light px-sm-8">
+          <div v-animate-on-scroll class="text__wrapper font-light px-sm-8">
             <h2 class="section__title mb-4">Bienvenidos a The God Academy</h2>
             <p class="text__lg mb-8">
               Disfruta este breve material que te cuenta un poco de los que
@@ -14,7 +14,7 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="px-3">
-          <div class="video__wrapper px-sm-8 text-center">
+          <div v-animate-on-scroll class="video__wrapper px-sm-8 text-center">
             <iframe
               src="https://www.youtube.com/embed/kLjnDzJh4_U?rel=0&amp;showinfo=0&autoplay=1&loop=0"
               frameborder="0"
