@@ -5,6 +5,7 @@
         <v-col cols="12" md="6" class="d-flex justify-center align-center">
           <div v-for="(brand, i) in brands" :key="i" class="mini-card px-2">
             <v-img
+              v-animate-on-scroll
               :src="brand.image"
               width="120"
               contain

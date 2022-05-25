@@ -1,11 +1,11 @@
 <template>
   <section class="testimonials">
     <v-container class="text-center">
-      <h2 class="section__title">Nuestro Equipo</h2>
+      <h2 v-animate-on-scroll class="section__title">Nuestro Equipo</h2>
       <v-row justify="center">
         <v-col cols="12" md="10">
           <v-card flat>
-            <v-carousel hide-delimiters cycle>
+            <v-carousel v-animate-on-scroll hide-delimiters cycle>
               <v-carousel-item
                 v-for="(slide, i) in slides"
                 :key="i"

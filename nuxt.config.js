@@ -26,15 +26,16 @@ export default {
       },
     ],
   },
+  pageTransition: {
+    name: 'scroll-y-transition',
+    mode: 'out-in',
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    '~/plugins/animateOnScroll.client.js',
-    // '~/plugins/animationEntering.client.js',
-  ],
+  plugins: ['~/plugins/animateOnScroll.client.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
