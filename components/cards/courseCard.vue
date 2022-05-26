@@ -6,8 +6,9 @@
     :min-width="minWidth"
     :width="width"
     :height="height"
-    flat
+    elevation="5"
     light
+    rounded="lg"
     class="course__card"
   >
     <figure>
@@ -20,28 +21,45 @@
       >
       </v-img>
     </figure>
-    <div class="card__wrapper px-8 pt-8">
-      <h2 v-animate-on-scroll class="card__title mb-2 pa-0">
-        <strong>
-          {{ title }}
-        </strong>
-      </h2>
-      <h3 v-animate-on-scroll class="card__subtitle mt-1 mb-2 mx-0 pa-0">
-        {{ subtitle }}
-      </h3>
-      <p v-animate-on-scroll class="card__text pa-0 my-4">
-        {{ description }}
-      </p>
+    <div class="card__wrapper px-3 pt-4">
+      <v-row>
+        <v-col cols="2" class="mr-2">
+          <v-avatar size="65">
+            <v-img :src="require('~/assets/images/transparente.png')" />
+          </v-avatar>
+        </v-col>
+        <v-col cols="8">
+          <h2 v-animate-on-scroll class="section__subtitle mb-2 pa-0">
+            <strong>
+              {{ title }}
+            </strong>
+          </h2>
+          <h3 v-animate-on-scroll class="card__subtitle mt-1 mb-2 mx-0 pa-0">
+            {{ subtitle }}
+          </h3>
+        </v-col>
+      </v-row>
     </div>
-    <div class="px-8 pb-8">
+    <v-card-actions class="px-8 pb-3">
       <my-btn
         v-animate-on-scroll
-        text="Start Now"
+        text="Conocer más"
         destiny="/courses"
         color="primary"
       />
-      <!-- @click="selectCourse(course)" -->
-    </div>
+      <v-spacer />
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+    <v-expand-transition>
+      <div v-show="show">
+        <v-divider></v-divider>
+        <p class="card__text pa-4">
+          {{ description }}
+        </p>
+      </div>
+    </v-expand-transition>
   </v-card>
 </template>
 <script>
@@ -95,6 +113,7 @@ export default {
   data() {
     return {
       course: {},
+      show: false,
     }
   },
 }
@@ -103,7 +122,7 @@ export default {
 <style lang="scss" scoped>
 .course__card {
   .card__wrapper {
-    height: 300px;
+    // height: 300px;
   }
 }
 </style>

@@ -16,8 +16,6 @@
             :img-link="course.imgSrc"
             width="100%"
             max-width="380"
-            height="100%"
-            min-height="600"
             :title="course.title"
             :subtitle="course.subtitle"
             :description="course.description"
