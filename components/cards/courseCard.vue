@@ -28,27 +28,22 @@
             <v-img :src="require('~/assets/images/transparente.png')" />
           </v-avatar>
         </v-col>
-        <v-col cols="8">
-          <h2 v-animate-on-scroll class="section__subtitle mb-2 pa-0">
+        <v-col v-animate-on-scroll cols="8">
+          <h2 class="section__subtitle mb-2 pa-0">
             <strong>
               {{ title }}
             </strong>
           </h2>
-          <h3 v-animate-on-scroll class="card__subtitle mt-1 mb-2 mx-0 pa-0">
+          <h3 class="card__subtitle mt-1 mb-2 mx-0 pa-0">
             {{ subtitle }}
           </h3>
         </v-col>
       </v-row>
     </div>
     <v-card-actions class="px-8 pb-3">
-      <my-btn
-        v-animate-on-scroll
-        text="Conocer más"
-        destiny="/courses"
-        color="primary"
-      />
+      <my-btn text="Conocer más" destiny="/courses" color="primary" />
       <v-spacer />
-      <v-btn icon @click="show = !show">
+      <v-btn icon @click.prevent="show = !show">
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
       </v-btn>
     </v-card-actions>
