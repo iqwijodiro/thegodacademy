@@ -63,12 +63,4 @@ export default {
     line-height: 1.5;
   }
 }
-@include respond(phone) {
-  .content__wrapper {
-    padding: 5rem 1rem;
-    .hero__title {
-      font-size: 2.6rem;
-    }
-  }
-}
 </style>

@@ -14,6 +14,11 @@ import EducationProcess from '~/components/aboutUs/educationProcess.vue'
 import WelcomeVideo from '~/components/aboutUs/welcomeVideo.vue'
 export default {
   components: { HeroAboutUs, TrainingCenter, EducationProcess, WelcomeVideo },
+  head() {
+    return {
+      title: '¿Quienes Somos? - Theo Academy',
+    }
+  },
 }
 </script>
 

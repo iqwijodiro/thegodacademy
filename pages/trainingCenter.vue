@@ -22,6 +22,11 @@ export default {
     CoursesSect,
     ProgramSect,
   },
+  head() {
+    return {
+      title: 'Centro de Formación - Theo Academy',
+    }
+  },
 }
 </script>
 

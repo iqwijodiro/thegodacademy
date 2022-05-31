@@ -5,21 +5,19 @@
         Lo más Popular
       </h2>
       <v-row justify="center">
-        <v-col
-          v-for="course in courses"
-          :key="course.title"
-          cols="12"
-          md="4"
-          class="px-4 mx-0 mb-8"
-        >
-          <course-card
-            :img-link="course.imgSrc"
-            width="100%"
-            max-width="380"
-            :title="course.title"
-            :subtitle="course.subtitle"
-            :description="course.description"
-          />
+        <v-col cols="12" class="px-4 mx-0 mb-8">
+          <vue-horizontal responsive class="horizontal__wrapper mx-auto py-10">
+            <course-card
+              v-for="(course, i) in courses"
+              :key="i"
+              :img-link="course.imgSrc"
+              width="100%"
+              max-width="380"
+              :title="course.title"
+              :subtitle="course.subtitle"
+              :description="course.description"
+            />
+          </vue-horizontal>
         </v-col>
       </v-row>
     </v-container>
@@ -27,10 +25,12 @@
 </template>
 
 <script>
+import VueHorizontal from 'vue-horizontal'
 import courseCard from '../cards/courseCard.vue'
 export default {
   components: {
     courseCard,
+    VueHorizontal,
   },
   data() {
     return {
@@ -57,6 +57,48 @@ export default {
           description:
             'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
         },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
+        {
+          imgSrc: require('~/assets/images/logo_brand_card_square.png'),
+          title: 'For Groups',
+          subtitle: 'Formacion para Grupos',
+          description:
+            'Select the theme that suits you. Each theme in the Mobirise Website Software contains a set of unique blocks.',
+        },
       ],
     }
   },
@@ -69,6 +111,14 @@ export default {
   background-color: #fff;
   h2 {
     color: #383838;
+  }
+  .horizontal__wrapper {
+    min-height: 600px;
+    // width: 100%;
+    // max-width: 1300px;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>

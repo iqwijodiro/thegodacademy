@@ -14,6 +14,11 @@ import ContactPath from '~/components/contactUs/contactPath.vue'
 import NewsletterSect from '~/components/contactUs/newsletterSect.vue'
 export default {
   components: { heroContact, SocialContact, ContactPath, NewsletterSect },
+  head() {
+    return {
+      title: 'Contáctanos - Theo Academy',
+    }
+  },
 }
 </script>
 

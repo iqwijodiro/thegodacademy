@@ -31,7 +31,7 @@ export default {
   },
   head() {
     return {
-      title: 'Formación cristiana y teológica online',
+      title: 'Formación teológica online - Theo Academy',
     }
   },
 }

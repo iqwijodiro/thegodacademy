@@ -131,3 +131,15 @@ ul,
   opacity: 1;
   transform: translateY(0);
 }
+
+// Responsive Desing + MQ's mixins
+
+@include respond(phone) {
+  h1,
+  .title__xl {
+    font-size: 2.6rem;
+  }
+  .content__wrapper {
+    padding: 5rem 1rem;
+  }
+}

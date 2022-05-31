@@ -12,17 +12,22 @@
         <v-row align="center">
           <v-col cols="12" md="6" class="py-0 px-4">
             <div class="video__wrapper">
-              <iframe
+              <video
                 v-animate-on-scroll
-                src="https://www.youtube.com/embed/kLjnDzJh4_U?rel=0&amp;showinfo=0&autoplay=1&loop=0"
-                frameborder="0"
-                allowfullscreen
-                loading="lazy"
-                width="800"
-                height="600"
-                class="video__item embedded-video mt-14 mt-sm-0 rounded-lg"
-                style="height: 400px"
-              ></iframe>
+                src="https://res.cloudinary.com/db0gjdwr0/video/upload/v1653942263/tga_assets/Video_Tutorial_Teo_Academy_-_CENTI_Sur_EEUU_ivrqvq.mp4"
+                controls
+                width="100%"
+                class="video__item embedded-video mt-14 mt-sm-0 rounded-lg mr-5"
+              >
+                <source
+                  src="https://res.cloudinary.com/db0gjdwr0/video/upload/v1653942263/tga_assets/Video_Tutorial_Teo_Academy_-_CENTI_Sur_EEUU_ivrqvq.mp4"
+                  type="video/mp4"
+                />
+                <source
+                  src="https://res.cloudinary.com/db0gjdwr0/video/upload/v1653925919/tga_assets/Video-Tutorial-Teo-Academy-CENTI-Sur-EEUU_zvy1ag.ogg"
+                  type="video/ogg"
+                />
+              </video>
             </div>
             <p
               v-animate-on-scroll
