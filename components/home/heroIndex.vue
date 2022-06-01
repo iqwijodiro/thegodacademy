@@ -18,7 +18,7 @@
               </p>
               <v-card-actions class="mx-n2 px-0">
                 <my-btn
-                  text="Quiero Formarme"
+                  text="Conocer más"
                   destiny="/courses"
                   color="primary"
                   class="ma-2"

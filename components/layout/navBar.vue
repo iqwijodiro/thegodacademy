@@ -11,22 +11,23 @@
       class="px-0"
     >
       <v-container
-        class="d-flex justify-space-between align-center align-self-baseline py-0 px-lg-14"
+        class="d-flex justify-center align-center align-self-baseline py-0 px-lg-14"
       >
-        <v-app-bar-title>
+        <v-app-bar-title class="mr-5">
           <nuxt-link to="/">
-            <v-img
+            <img
               :src="require('~/assets/images/logo-brand.png')"
-              width="80%"
-              max-height="95"
+              width="100%"
+              height="95"
               contain
+              class="d-block mt-n1"
             />
           </nuxt-link>
         </v-app-bar-title>
-        <v-spacer></v-spacer>
+        <!-- <v-spacer></v-spacer> -->
         <nav
           v-if="$vuetify.breakpoint.mdAndUp"
-          class="nav transparent d-flex align-center"
+          class="nav transparent d-flex align-center mx-5"
         >
           <!-- <v-row align="end" class="pt-0"> -->
           <!-- <v-col> -->
@@ -61,6 +62,9 @@
                 </v-list-item>
               </v-list>
             </v-menu>
+          </nuxt-link>
+          <nuxt-link to="/ourBlog" class="nav__link ma-4">
+            <h3>Blog</h3>
           </nuxt-link>
           <nuxt-link to="/contactUs" class="nav__link ma-4">
             <h3>Contáctanos</h3>
