@@ -38,13 +38,24 @@
         </v-col>
       </v-row>
     </v-container>
+    <v-container>
+      <v-row justify="center" align="center">
+        <v-col cols="12" md="6">
+          <v-textarea v-model="giftBookText" filled />
+        </v-col>
+        <pdf-generator :gift-book-text="giftBookText" />
+      </v-row>
+    </v-container>
   </section>
 </template>
 
 <script>
+import PdfGenerator from '../pdfGenerator.vue'
 export default {
+  components: { PdfGenerator },
   data() {
     return {
+      giftBookText: null,
       slides: [
         {
           src: require('@/assets/images/hero_bg.png'),
